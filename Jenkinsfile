@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('SCM') {
             steps {
-                git 'https://github.com/kalpitrcc/java-maven-docker-webapp.git'
+                git branch: 'main', url: 'https://github.com/kalpitrcc/java-maven-docker-webapp.git'
                 
             }
             
